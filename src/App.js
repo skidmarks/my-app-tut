@@ -1,13 +1,29 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
-import { Fragment } from 'react';
+import MyComponent from './MyComponent';
 
-function App() {
-  const name = undefined;
-  return <div>{name || '리액트'}</div>
+class App extends Component {
+  render() {
+    const name = 'react';
+    return (
+      <div>
+        <div className="react">{name}</div>
+        <br />
+        <div className="react">
+          <MyComponent />
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App;
+
+
+
+
+
+
 
 
 
